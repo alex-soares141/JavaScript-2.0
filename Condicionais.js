@@ -1,10 +1,10 @@
-var possuiGraduacao = false;
+var possuiGraduacao = true;
 var possuiCertificacao = false;
 var analfabeto = true;
 
 if (!possuiGraduacao) {
     
-    console.log("Você é um graduado");
+    console.log("Você não é um graduado");
 } 
 else if (possuiCertificacao) { 
     console.log("Você possui certificação");

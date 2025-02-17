@@ -2,28 +2,29 @@
 var pessoa = {
     Nome: "Alex",
     Profissao: "Desenvolvedor",
-    idade: 30
+    idade: 30,
+    apresentar(nome) {
+        return `Nome: ${this.Nome}`;
+    },
+    fazoque (profissao) {
+        return `Ele é: ${this.Profissao}`;
+    }
 };
 
+console.log(pessoa.apresentar()); // Chama a função apresentar para exibir o nome
+console.log(pessoa.fazoque());   // Chama a função apresentar para exibir o nome
 
-console.log(pessoa);
+// dobrando a altura da pessoa2
+var pessoa2 = {
+    altura: 1.63,
+    peso : 63,
 
-
-// Criando um objeto de carro
-
-var carro ={
-    marca: "honda",
-    pneu : 19,
-    cor: "Vermelho",
-    portas: "4 portas"
+    dobroaaltura(){
+        return this.altura * 2;
+    }
 }
+pessoa2.altura = 2.00 // definindo uma nova altura ou seja setando
 
-var bicicleta = {
-    marca: "Rava",
-    aro : "19",
-    cor : "Grafite "
-
-  
-}
+console.log(pessoa2.dobroaaltura());
 
 
